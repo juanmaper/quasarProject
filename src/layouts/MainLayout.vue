@@ -51,47 +51,23 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
+    title: 'Typography',
+    caption: 'Types of typography in quasar',
+    icon: 'las la-font',
+    link: 'typography'
+  },
+  {
+    title: 'Flex',
+    caption: 'Styles with flex',
+    icon: 'las la-layer-group',
+    link: 'flex'
+  },
+  {
     title: 'Docs',
     caption: 'quasar.dev',
     icon: 'las la-graduation-cap',
     link: 'https://quasar.dev'
   },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'lab la-github',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'lab la-discord',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'las la-comments',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'lab la-twitter',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'lab la-facebook-f',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'lab la-stumbleupon-circle',
-    link: 'https://awesome.quasar.dev'
-  }
 ]
 
 export default defineComponent({
