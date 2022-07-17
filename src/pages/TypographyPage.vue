@@ -25,12 +25,12 @@
     <span class="text-weight-bold">Elit voluptate reprehenderit sint ut fugiat sunt sit exercitation ad ex pariatur minim mollit.</span> 
     <span class="text-weight-bolder">Velit mollit dolore deserunt elit reprehenderit labore incididunt veniam est enim labore qui.</span> 
 
-    <!-- <q-btn 
+    <q-btn 
       color="primary"
-      :label="sideMenuOpen ? 'Cerrar menú lateal' : 'Abrir menú lateral'"
+      :label="isSideMenuOpen ? 'Close side menu' : 'Open side menu'"
       class="q-mt-md"
       @click="toggleSideMenu"
-    /> -->
+    />
 
 
   </q-page>
@@ -39,7 +39,24 @@
 <script>
 import { defineComponent } from 'vue'
 
+import useUI from '../composables/useUI'
+
 export default defineComponent({
-  name: 'TypographyPage'
+  name: 'TypographyPage',
+
+  setup() {
+
+    const {
+      isSideMenuOpen,
+      toggleSideMenu
+    } = useUI()
+
+    return {
+
+      isSideMenuOpen,
+      toggleSideMenu
+    }
+
+  }
 })
 </script>
