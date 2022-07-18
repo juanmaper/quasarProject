@@ -13,6 +13,12 @@ export const linksList = [
     link: 'flex'
   },
   {
+    title: 'Dialogs',
+    caption: 'Dialogs, alerts and confirmations',
+    icon: 'las la-th-large',
+    link: 'dialogs'
+  },
+  {
     title: 'Docs',
     caption: 'quasar.dev',
     icon: 'las la-graduation-cap',
