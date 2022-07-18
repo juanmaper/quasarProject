@@ -75,7 +75,8 @@ export default defineComponent({
   setup() {
     const $q = useQuasar()
 
-    // To add the icon you want to any field. Configured globally using the icons from line-awesome in the quasar.config.js file
+    // To add the icon you want in errors in fields. It's defined in the quasar global variable
+    // It's commented because it was configured globally using the icons from line-awesome in the quasar.config.js file
     // $q.iconSet.field.error = "las la-exclamation-triangle";
 
     const userForm = ref({
